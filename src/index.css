@@ -1,0 +1,183 @@
+/* Reset margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9; /* Set a light background for better readability */
+  color: #333; /* Set text color to dark grey for better contrast */
+}
+
+/* Code styling for code blocks or inline code */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Styling for links across the app */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Basic Reset for Images */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Set up the overall page layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* This will help with any sections or content areas */
+.container {
+  flex: 1;
+}
+
+/* Define basic container styles for header, footer, etc. */
+.container > .header,
+.container > .footer {
+  padding: 20px;
+  background-color: #0078d7; /* Using a consistent background for header/footer */
+  color: white;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0078d7; /* Consistent theme color */
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  opacity: 0.7;
+}
+
+/* Signup Page Styling */
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+}
+
+.left-section .logo h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.hero-image {
+  max-width: 80%;
+  margin-top: 30px;
+}
+
+.right-section {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.right-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.signup-form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.signup-button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup-button:hover {
+  background-color: #005bb5;
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* General Form Styling */
+input:focus {
+  outline: none;
+  border-color: #0078d7;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    padding-bottom: 20px;
+  }
+
+  .right-section {
+    padding-left: 0;
+  }
+}
